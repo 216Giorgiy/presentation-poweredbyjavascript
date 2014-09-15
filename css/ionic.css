@@ -193,6 +193,9 @@ body {
 .reveal .slide-number {
   color: #fff; }
 
+/*********************************************
+ * CUSTOMIZATIONS
+ *********************************************/
 
 .reveal section img.logo {
   margin-bottom: 50px;
@@ -201,8 +204,8 @@ body {
   box-shadow: none;
 }
 
-.reveal h5.framework-url {
-  margin-top: 40px;
+.reveal .framework-url {
+  margin-bottom: 40px;
   color: #ddeaff;
   font-weight: 300;
 }
@@ -221,5 +224,6 @@ body {
 .col.code > * {
   margin-left: 40px;
 }
-
-
+#sample-video {
+  width: 100%;
+}
