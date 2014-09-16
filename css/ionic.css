@@ -227,3 +227,6 @@ body {
 #sample-video {
   width: 100%;
 }
+.muted {
+  opacity: 0.4;
+}
