@@ -56,7 +56,7 @@
 
         <section>
           <h3>Imagine your client is a resort.</h3>
-          <h4>They want an app.</h4>
+          <blockquote>They want an app.</blockquote>
         </section>
 
 
@@ -67,12 +67,12 @@
           <div class="col">
             <h3 class="fragment">You want</h3>
             <ul>
-              <li class="fragment">Native quality performance and experience</li>
-              <li class="fragment">To build once and deploy cross platform</li>
-              <li class="fragment">To write code with JavaScript, HTML, CSS</li>
-              <li class="fragment">UI Controls such as side menus, tabs, etc</li>
-              <li class="fragment">Quick development and debugging</li>
-              <li class="fragment">Familiar development tools</li>
+              <li class="fragment">Native quality</li>
+              <li class="fragment">Build once, deploy cross platform</li>
+              <li class="fragment">Write only JavaScript, HTML, CSS</li>
+              <li class="fragment">UI components</li>
+              <li class="fragment">Fast turnaround</li>
+              <li class="fragment">Familiar tools</li>
             </ul>
           </div>
         </section>
@@ -105,12 +105,12 @@
 
           <section>
             <h2>AngularJS is the web application foundation</h2>
-            <blockquote>Angular is used to manage data and business logic.</blockquote>
+            <blockquote>Angular is primarily used to manage data and business logic.</blockquote>
           </section>
 
           <section>
-            <h2>Ionic provides the UI controls</h2>
-            <blockquote>Ionic provides the much of the interface for your users.</blockquote>
+            <h2>Ionic provides the UI components</h2>
+            <blockquote>Ionic provides much of the interface for your app.</blockquote>
           </section>
 
         </section>
@@ -124,7 +124,7 @@
           </section>
 
           <section>
-            <h2>Build apps with Web Technologies you already know and love</h2>
+            <h2>Use web technologies you already know and love</h2>
             <div style="margin-top: 70px">
               <img src="img/html.png" class="logo" width="185" height="260">
               <img src="img/css.png" class="logo" width="185" height="260" style="margin-left: 80px; margin-right: 80px;">
@@ -139,14 +139,14 @@
             <h2>User interface components</h2>
             <div class="fragment"><h4>CSS Components</h4>
               <ul>
-                <li>CSS only components for mobile friendly styling</li>
+                <li>CSS components for unique mobile controls</li>
                 <li>Large catalog of css classes</li>
               </ul>
             </div>
             <div class="fragment">
               <h4>JavaScript components</h4>
               <ul>
-                <li>Advanced components with functionality built in</li>
+                <li>JavaScript components with functionality built in</li>
                 <li>Angular directives, used as like HTML tags</li>
                 <li>Angular services, JavaScript objects with methods</li>
               </ul>
@@ -300,6 +300,11 @@
             <blockquote>Ok, so how did you make that demo?</blockquote>
           </section>
 
+
+          <section>
+            <blockquote>Let's look at the demo a little closer.</blockquote>
+          </section>
+
           <section>
             <h2>Demo Stats</h2>
             <ul>
@@ -341,7 +346,7 @@
 
           <section>
             <div class="col preview">
-              <img src="img/list-example.png" class="logo" width="380" height="800">
+              <img src="img/list-example.png" class="logo" width="380" height="700">
             </div>
             <div class="col code">
               <h2>Lists</h2>
@@ -368,7 +373,7 @@
 
           <section>
             <div class="col preview">
-              <img src="img/list-complex-example.png" class="logo" width="380" height="800">
+              <img src="img/list-complex-example.png" class="logo" width="380" height="700">
             </div>
             <div class="col code">
               <h2>Complex Lists</h2>
@@ -385,6 +390,8 @@
       <img ng-src="{{ item.pic }}">
       <h2>{{ item.name }}</h2>
       <p>{{ item.quote }}</p>
+      <ion-option-button>Edit</ion-option-button>
+      <ion-delete-button>Delete</ion-delete-button>
     </ion-item>
   </ion-list></code></pre>
             </div>
@@ -412,7 +419,7 @@
 
           <section>
             <div class="col preview">
-              <img src="img/tabs-example.png" class="logo" width="380" height="800">
+              <img src="img/tabs-example.png" class="logo" width="380" height="700">
             </div>
             <div class="col code">
               <h2>Tabs</h2>
@@ -445,7 +452,7 @@
 
           <section>
             <div class="col preview">
-              <img src="img/slidebox-example.png" class="logo" width="380" height="800">
+              <img src="img/slidebox-example.png" class="logo" width="380" height="700">
             </div>
             <div class="col code">
               <h2>Slide Box</h2>
@@ -467,7 +474,7 @@
 
           <section>
             <div class="col preview">
-              <img src="img/actionsheet-example.png" class="logo" width="380" height="800">
+              <img src="img/actionsheet-example.png" class="logo" width="380" height="700">
             </div>
             <div class="col code">
               <h2>Action Sheet</h2>
@@ -491,7 +498,7 @@
 
           <section>
             <div class="col preview">
-              <img src="img/pull-refresh-animation.gif" class="logo" width="380" height="800">
+              <img src="img/pull-refresh-animation.gif" class="logo" width="380" height="700">
             </div>
             <div class="col code">
               <h2>Pull to Refresh</h2>
@@ -506,7 +513,7 @@
 
           <section>
             <div class="col preview">
-              <img src="img/navigation-example.png" class="logo" width="380" height="800">
+              <img src="img/navigation-example.png" class="logo" width="380" height="700">
             </div>
             <div class="col code">
               <h2>Navigation</h2>
@@ -593,12 +600,14 @@
       });
 
       // Autoplay video on slide 3
+
       Reveal.addEventListener( 'slidechanged', function( event ) {
+        var video = document.getElementById('sample-video');
         if (event.indexh == 3) {
-          document.getElementById('sample-video').load();
-          document.getElementById('sample-video').play();
+          video.load();
+          video.play();
         } else {
-          document.getElementById('sample-video').pause();
+          video.pause();
         }
       });
     </script>
